@@ -3,7 +3,7 @@ node_js:
   - 10 # 指定 NodeJS 版本
 cache: npm
 sudo: required # 是否需要 sudo 权限
-
+dist: trusty # 指定系统版本。trusty 是指 Ubuntu 14.04 发行版的名
 branches:# 指定要构建的分支
   only:
     - dev # only 表示只构建以下分支
