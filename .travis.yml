@@ -1,54 +1,39 @@
-language: node_js # 指定语言环境
-node_js: "8" # 指定 NodeJS 版本
-#cache: npm
-#sudo: required # 是否需要 sudo 权限
-#dist: trusty # 指定系统版本。trusty 是指 Ubuntu 14.04 发行版的名
-branches:# 指定要构建的分支
+language: node_js
+# nodejs版本
+node_js:
+    - '6'
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_script:
+
+# 无其他依赖项所以执行npm run build 构建就行了
+script:
+  - npm run build
+
+after_script:
+#  - cd ./dist
+#  - git init
+#  - git config user.name "${U_NAME}"
+#  - git config user.email "${U_EMAIL}"
+#  - git add .
+#  - git commit -m "Update tools"
+#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+# E: Build LifeCycle
+
+#指定分支，只有指定的分支提交时才会运行脚本
+branches:
   only:
     - dev
-    
-    
-## 各阶段声明周期
-#before_install:# install 阶段之前执行
-#  - source print.sh "before_install"
-#
-#install:# install 阶段
-#  - source print.sh "install"
-#  - git branch
-#  - hexo -v
-#
-#before_script:# script 阶段之前执行
-#  - source print.sh "before_script"
-#
-#script:# script 阶段
-#  - source print.sh "script"
-#
-#after_success:# script 阶段成功时执行
-#  - source print.sh "after_success"
-#
-#after_failure:# script 阶段失败时执行
-#  - source print.sh "after_failure"
-#
-#before_deploy:# eploy 步骤之前执行
-#  - source print.sh "before_deploy"
-#
-#deploy:# deploy 阶段
-#  - source print.sh "deploy"
-#
-#after_deploy:# deploy 步骤之后执行
-#  - source print.sh "after_deploy"
-#
-#after_script:# script 阶段之后执行
-#  - source print.sh "after_script"
-
-#notifications: # 设置通知项
-#    email: true
-#
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  github-token: $GH_TOKEN
-#  keep-history: true
-#  on:
-#    branch: master
-#  local-dir: public
+env:
+ global:
+   # 我将其添加到了travis-ci的环境变量中
+   #- GH_REF: github.com/yimogit/metools.git
