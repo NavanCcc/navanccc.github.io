@@ -13,10 +13,10 @@ branches:# 指定要构建的分支
 #before_install:# install 阶段之前执行
 #  - source print.sh "before_install"
 #
-install:# install 阶段
-  - source print.sh "install"
-  - git branch
-  - hexo -v
+#install:# install 阶段
+#  - source print.sh "install"
+#  - git branch
+#  - hexo -v
 #
 #before_script:# script 阶段之前执行
 #  - source print.sh "before_script"
