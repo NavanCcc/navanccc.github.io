@@ -8,34 +8,5 @@ branches: # 指定要构建的分支
   only: # only 表示只构建以下分支
   - dev
 
-before_install:# install 阶段之前执行
-  - source print.sh "before_install"
-
-install:# install 阶段
-  - source print.sh "install"
-  - git branch
-  - hexo -v
-
-before_script:# script 阶段之前执行
-  - source print.sh "before_script"
-
-script:# script 阶段
-  - source print.sh "script"
-
-after_success:# script 阶段成功时执行
-  - source print.sh "after_success"
-
-after_failure:# script 阶段失败时执行
-  - source print.sh "after_failure"
-
-before_deploy:# eploy 步骤之前执行
-  - source print.sh "before_deploy"
-
-deploy:# deploy 阶段
-  - source print.sh "deploy"
-
-after_deploy:# deploy 步骤之后执行
-  - source print.sh "after_deploy"
-
-after_script:# script 阶段之后执行
-  - source print.sh "after_script"
+install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
+  - source print.sh # 指定 shell 脚本文件来做初始化
