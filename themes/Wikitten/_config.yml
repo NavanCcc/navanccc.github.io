@@ -11,12 +11,12 @@ menu:
 customize:
     logo:
         enabled: true
-        width: 40
-        height: 40
-        url: /images/user_icon.jpg
+        width: 30
+        height: 30
+        url: /images/user_icon.png
     profile:
         enabled: false # Whether to show profile bar
-        avatar: /images/user_icon.jpg
+        avatar: /images/user_icon.png
         gravatar: 361732692@qq.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: ccc
         author_title: Designer & Programmer
@@ -26,7 +26,7 @@ customize:
     sidebar: left # sidebar position, options: left, right
     category_perExpand: false # enable article categories list per expanding
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: /images/user_icon.jpg # path to favicon
+    favicon: /images/user_icon.png # path to favicon
     default_index_file: index.md # if this, it will display at site index instead of default index page
     social_links:
         github: https://github.com/NavanCcc/

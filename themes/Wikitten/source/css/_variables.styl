@@ -3,17 +3,59 @@ support-for-ie = false
 vendor-prefixes = webkit moz ms official
 
 // Colors
+// 默认颜色
 color-default = #565a5f
 color-grey = #999
-color-border = #dfe1e2
 color-border-stretch = #c1cfdc
 color-link = #38b7ea
-color-background = #ebeef1
-color-meta-head = #7b848c
 color-sidebar-text = #777
 color-sidebar-text-dark = #333
 color-widget-background = #ddd
 color-widget-border = #ccc
+
+// 各类主题颜色，参考：http://tool.c7sky.com/webcolor/#hue_6
+
+// // 1、青色护眼 主题
+// color-background = #CCFFFF // 整体背景色
+// // header 颜色
+// color-header-background = #009999  // header整体背景色
+// color-header-text-color = #fff  // header 标题文字颜色
+// color-border = #fff // 搜索框，边框颜色
+// // 模块颜色
+// color-meta-head = #66CCCC // 模块标题区域 背景色
+// color-meta-button-background = #009999 // 模块标题区域 按钮背景色
+// // 模块：文章模块颜色
+// color-article-entry-background = #CCFFFF // 文章整体背景色
+
+
+// 2、黑蓝白 主题
+color-background = #fff // 整体背景色
+// header 颜色
+color-header-background = #000  // header整体背景色
+color-header-text-color = #fff  // header 标题文字颜色
+color-border = #fff // 搜索框，边框颜色
+// 模块颜色
+color-meta-head = #003366 // 模块标题区域 背景色
+color-meta-button-background = #006699 // 模块标题区域 按钮背景色
+// 模块：文章模块颜色
+color-article-entry-background = #fff // 文章整体背景色
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Fonts
 font-sans = "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif
@@ -24,8 +66,8 @@ line-height = 1.6em
 line-height-title = 1.3em
 
 // Header
-header-height = 48px
-header-sub-height = 36px
+header-height = 45px
+header-sub-height = 45px
 logo-url = hexo-config("customize.logo.url")
 logo-width = 0px + hexo-config("customize.logo.width")
 logo-height = 0px + hexo-config("customize.logo.height")
@@ -39,7 +81,7 @@ profile = hexo-config("customize.profile.enabled")
 profile-avatar-size = 128px
 
 // Layout
-block-margin = 40px
+block-margin = 20px // 模块间距
 article-padding = 20px
 mobile-nav-width = 280px
 main-column = 7.5
