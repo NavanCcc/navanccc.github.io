@@ -8,8 +8,7 @@ echo -e "dirname Path:\c"
 pwd
 
 # 执行父层级脚本：test_print
-./../../../test_print.sh "test_print"
+./../../../test_print.sh
 
 # cd - 返回上一次目录
-echo -e "curPath:\c"
 cd -
