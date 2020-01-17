@@ -4,6 +4,8 @@ menu:
   归档: /archives
   分类: /categories
   标签: /tags
+  导航: /navigation
+  工具: /tools
   关于: /about
   GitHub: https://github.com/NavanCcc
 
@@ -22,7 +24,7 @@ customize:
         author_title: Designer & Programmer
         location: Beijing, China
         follow: https://github.com/NavanCcc/
-    highlight: monokai
+    highlight: androidstudio
     sidebar: left # sidebar position, options: left, right
     category_perExpand: false # enable article categories list per expanding
     thumbnail: true # enable posts thumbnail, options: true, false
