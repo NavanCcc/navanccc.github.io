@@ -27,8 +27,8 @@
 
 | 个人博客： |  |  |  |  |   |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| [Vasiliy Zukanov](https://www.techyourchance.com/) | [鸿洋](https://blog.csdn.net/lmj623565791) | [杨充](https://www.cnblogs.com/yc211) |      |      |  |
-|                                            |                                   |                                             |                                  |                                         |                               |
+| [鸿洋](https://blog.csdn.net/lmj623565791) | [恋猫de小郭](https://juejin.im/user/582aca2ba22b9d006b59ae68/posts) | [杨充](https://www.cnblogs.com/yc211) | [caoz的梦呓](https://blog.csdn.net/caoz) | [技术胖](https://jspang.com/) |  |
+| [Vasiliy Zukanov](https://www.techyourchance.com/) | [Jake Wharton](https://jakewharton.com/blog/) |                                             |                                  |                                         |                               |
 
 
 
@@ -36,6 +36,8 @@
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [菜鸟教程](https://www.runoob.com/) |  |      |      |      |  |
 |                                            |                                   |                                             |                                  |                                         |                               |
+
+
 
 
 
